@@ -1,6 +1,6 @@
-#include "etl/stm32f4xx/interrupt_table.h"
+#include <etl/STM32F4xx/interrupt_table.h>
+#include <etl/STM32F4xx/interrupts.h>
 #include "etl/attribute_macros.h"
-#include "etl/stm32f4xx/interrupts.h"
 
 namespace etl {
 namespace stm32f4xx {
@@ -10,7 +10,7 @@ typedef void (*InterruptHandler)(void);
 
 struct InterruptTable {
   #define ETL_STM32F4XX_IRQ(name) InterruptHandler name ## _handler;
-  #include "etl/stm32f4xx/interrupts.def"
+  #include <etl/STM32F4xx/interrupts.def>
   #undef ETL_STM32F4XX_IRQ
 };
 
@@ -28,7 +28,7 @@ ETL_SECTION(".etl_stm32f4xx_interrupt_table")
 ETL_USED
 InterruptTable const stm32f4xx_interrupt_table = {
   #define ETL_STM32F4XX_IRQ(name) etl_stm32f4xx_ ## name ## _handler,
-  #include "etl/stm32f4xx/interrupts.def"
+  #include <etl/STM32F4xx/interrupts.def>
   #undef ETL_STM32F4XX_IRQ
 };
 
@@ -37,7 +37,7 @@ extern "C" {
   void unexpected_irq() { while (1); }
   #define ETL_STM32F4XX_IRQ(name) void etl_stm32f4xx_ ## name ## _handler() \
                                   ETL_WEAK ETL_ALIAS("unexpected_irq");
-  #include "etl/stm32f4xx/interrupts.def"
+  #include <etl/STM32F4xx/interrupts.def>
   #undef ETL_STM32F4XX_IRQ
 }
 

@@ -4,7 +4,7 @@
 
 #include "ffconf.h"
 #include "SDCard.h"
-#include "Emulator.h"
+#include "emulator.h"
 #include "Keyboard/ps2Keyboard.h"
 #include "Emulator/bkSnapshot.h"
 

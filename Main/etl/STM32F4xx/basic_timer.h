@@ -1,7 +1,7 @@
 #ifndef _ETL_STM32F4XX_BASIC_TIMER_H_INCLUDED
 #define _ETL_STM32F4XX_BASIC_TIMER_H_INCLUDED
 
-#include "etl/stm32f4xx/types.h"
+#include <etl/STM32F4xx/types.h>
 
 namespace etl {
 namespace stm32f4xx {

@@ -1,8 +1,8 @@
 #ifndef _ETL_STM32F4XX_GPIO_H_INCLUDED
 #define _ETL_STM32F4XX_GPIO_H_INCLUDED
 
+#include <etl/STM32F4xx/types.h>
 #include "etl/attribute_macros.h"
-#include "etl/stm32f4xx/types.h"
 
 namespace etl {
 namespace stm32f4xx {
@@ -34,7 +34,7 @@ struct Gpio {
     // 0b11 is reserved
   };
 
-  #define ETL_BFF_DEFINITION_FILE "etl/stm32f4xx/gpio.reg"
+  #define ETL_BFF_DEFINITION_FILE "etl/STM32F4xx/gpio.reg"
   #include "etl/biffield/generate.h"
   #undef ETL_BFF_DEFINITION_FILE
 

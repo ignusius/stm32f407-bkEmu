@@ -1,7 +1,7 @@
 #ifndef _ETL_STM32F4XX_APB_H_INCLUDED
 #define _ETL_STM32F4XX_APB_H_INCLUDED
 
-#include "etl/stm32f4xx/types.h"
+#include <etl/STM32F4xx/types.h>
 
 namespace etl {
 namespace stm32f4xx {
@@ -12,7 +12,7 @@ enum class ApbPeripheral : HalfWord {
    */
   #define ETL_STM32F4XX_APB_PERIPH(slot, name) name = (0 << 8) | slot,
   #define ETL_STM32F4XX_APB_RESERVED(slot) /* nothing */
-  #include "etl/stm32f4xx/apb1_peripherals.def"
+  #include <etl/STM32F4xx/apb1_peripherals.def>
   #undef ETL_STM32F4XX_APB_RESERVED
   #undef ETL_STM32F4XX_APB_PERIPH
 
@@ -21,7 +21,7 @@ enum class ApbPeripheral : HalfWord {
    */
   #define ETL_STM32F4XX_APB_PERIPH(slot, name) name = (1 << 8) | slot,
   #define ETL_STM32F4XX_APB_RESERVED(slot) /* nothing */
-  #include "etl/stm32f4xx/apb2_peripherals.def"
+  #include <etl/STM32F4xx/apb2_peripherals.def>
   #undef ETL_STM32F4XX_APB_RESERVED
   #undef ETL_STM32F4XX_APB_PERIPH
 };

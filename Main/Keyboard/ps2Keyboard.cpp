@@ -1,7 +1,7 @@
 #include <ctype.h>
 
 #include "stm32f4xx.h"
-#include "ps2keyboard.h"
+#include "ps2Keyboard.h"
 #include "queue.h"
 
 uint32_t ModifierKeyState;

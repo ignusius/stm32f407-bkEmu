@@ -1,7 +1,7 @@
 #ifndef _ETL_STM32F4XX_DMA_H_INCLUDED
 #define _ETL_STM32F4XX_DMA_H_INCLUDED
 
-#include "etl/stm32f4xx/types.h"
+#include <etl/STM32F4xx/types.h>
 
 namespace etl {
 namespace stm32f4xx {
@@ -21,12 +21,12 @@ struct Dma {
       word = 0b10,
     };
 
-    #define ETL_BFF_DEFINITION_FILE "etl/stm32f4xx/dma_stream.reg"
+    #define ETL_BFF_DEFINITION_FILE "etl/STM32F4xx/dma_stream.reg"
     #include "etl/biffield/generate.h"
     #undef ETL_BFF_DEFINITION_FILE
   };
 
-  #define ETL_BFF_DEFINITION_FILE "etl/stm32f4xx/dma.reg"
+  #define ETL_BFF_DEFINITION_FILE "etl/STM32F4xx/dma.reg"
   #include "etl/biffield/generate.h"
   #undef ETL_BFF_DEFINITION_FILE
 

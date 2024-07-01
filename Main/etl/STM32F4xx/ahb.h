@@ -1,7 +1,7 @@
 #ifndef _ETL_STM32F4XX_AHB_H_INCLUDED
 #define _ETL_STM32F4XX_AHB_H_INCLUDED
 
-#include "etl/stm32f4xx/types.h"
+#include <etl/STM32F4xx/types.h>
 
 namespace etl {
 namespace stm32f4xx {
@@ -18,7 +18,7 @@ enum class AhbPeripheral : Word {
   #define ETL_NONE (0xFF)
   #define ETL_STM32F4XX_AHB_PERIPH(name, rst, en) \
     name = (0 << 16) | (rst << 8) | (en << 0),
-  #include "etl/stm32f4xx/ahb1_peripherals.def"
+  #include <etl/STM32F4xx/ahb1_peripherals.def>
   #undef ETL_STM32F4XX_AHB_PERIPH
   #undef ETL_NONE
 };

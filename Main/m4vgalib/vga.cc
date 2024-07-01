@@ -1,3 +1,15 @@
+#include <etl/STM32F4xx/adv_timer.h>
+#include <etl/STM32F4xx/ahb.h>
+#include <etl/STM32F4xx/apb.h>
+#include <etl/STM32F4xx/dbg.h>
+#include <etl/STM32F4xx/dma.h>
+#include <etl/STM32F4xx/flash.h>
+#include <etl/STM32F4xx/gp_timer.h>
+#include <etl/STM32F4xx/gpio.h>
+#include <etl/STM32F4xx/interrupt_table.h>
+#include <etl/STM32F4xx/interrupts.h>
+#include <etl/STM32F4xx/rcc.h>
+#include <etl/STM32F4xx/syscfg.h>
 #include "vga.h"
 
 #include <atomic>
@@ -13,19 +25,6 @@
 #include "etl/armv7m/instructions.h"
 #include "etl/armv7m/scb.h"
 #include "etl/armv7m/types.h"
-
-#include "etl/stm32f4xx/adv_timer.h"
-#include "etl/stm32f4xx/ahb.h"
-#include "etl/stm32f4xx/apb.h"
-#include "etl/stm32f4xx/dbg.h"
-#include "etl/stm32f4xx/dma.h"
-#include "etl/stm32f4xx/flash.h"
-#include "etl/stm32f4xx/gpio.h"
-#include "etl/stm32f4xx/gp_timer.h"
-#include "etl/stm32f4xx/interrupts.h"
-#include "etl/stm32f4xx/interrupt_table.h"
-#include "etl/stm32f4xx/rcc.h"
-#include "etl/stm32f4xx/syscfg.h"
 
 #include "vgaConfig.h"
 #include "copy_words.h"

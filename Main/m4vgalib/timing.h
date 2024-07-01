@@ -1,9 +1,9 @@
 #ifndef VGA_TIMING_H
 #define VGA_TIMING_H
 
+#include <etl/STM32F4xx/rcc.h>
 #include <cstdint>
 
-#include "etl/stm32f4xx/rcc.h"
 
 namespace vga {
 

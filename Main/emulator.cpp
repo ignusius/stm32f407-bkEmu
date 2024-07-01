@@ -1,11 +1,11 @@
-#include "Emulator.h"
+#include <etl/STM32F4xx/gpio.h>
+#include "emulator.h"
 
 #include <string.h>
 #include <stdint.h>
 #include "stm32f4xx.h"
 #include "m4vgalib/vga.h"
 #include "m4vgalib/timing.h"
-#include "etl/stm32f4xx/gpio.h"
 #include "Keyboard/ps2Keyboard.h"
 #include "Emulator/bkEmu.h"
 #include "resources/keyboard.h"

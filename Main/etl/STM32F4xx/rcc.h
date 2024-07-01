@@ -1,9 +1,9 @@
 #ifndef _ETL_STM32F4XX_RCC_H_INCLUDED
 #define _ETL_STM32F4XX_RCC_H_INCLUDED
 
-#include "etl/stm32f4xx/types.h"
-#include "etl/stm32f4xx/ahb.h"
-#include "etl/stm32f4xx/apb.h"
+#include <etl/STM32F4xx/ahb.h>
+#include <etl/STM32F4xx/apb.h>
+#include <etl/STM32F4xx/types.h>
 
 namespace etl {
 namespace stm32f4xx {
@@ -19,7 +19,7 @@ struct Rcc {
     div16 = 0b111,
   };
 
-  #define ETL_BFF_DEFINITION_FILE "etl/stm32f4xx/rcc.reg"
+  #define ETL_BFF_DEFINITION_FILE "etl/STM32F4xx/rcc.reg"
   #include "etl/biffield/generate.h"
   #undef ETL_BFF_DEFINITION_FILE
 

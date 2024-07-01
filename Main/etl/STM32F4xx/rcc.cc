@@ -1,8 +1,7 @@
-#include "etl/stm32f4xx/rcc.h"
-
+#include <etl/STM32F4xx/flash.h>
+#include <etl/STM32F4xx/rcc.h>
 #include "etl/assert.h"
 #include "etl/armv7m/instructions.h"
-#include "etl/stm32f4xx/flash.h"
 
 using etl::armv7m::data_synchronization_barrier;
 

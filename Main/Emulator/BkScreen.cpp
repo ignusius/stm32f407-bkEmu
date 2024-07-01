@@ -1,9 +1,9 @@
-#include "bkscreen.h"
+#include "BkScreen.h"
 #include <string.h>
 #include "m4vgalib/vga.h"
 #include <Emulator/unpack_2bpp.h>
 #include "m4vgalib/rast/unpack_1bpp.h"
-#include "bkemu.h"
+#include "bkEmu.h"
 
 //   0020 Screen mode 0 - 512x256, FF - 256x256
 //   0021 Screen inversion 0 - off, FF - on

@@ -1,4 +1,4 @@
-#include "etl/stm32f4xx/gpio.h"
+#include <etl/STM32F4xx/gpio.h>
 
 namespace etl {
 namespace stm32f4xx {

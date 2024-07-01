@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 #include "startup.h"
-#include "Emulator.h"
+#include "emulator.h"
 #include "SDCard.h"
 #include "Emulator/bkEmu.h"
 #include "Keyboard/ps2Keyboard.h"

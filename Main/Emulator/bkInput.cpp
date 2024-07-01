@@ -1,4 +1,4 @@
-#include "bkinput.h"
+#include "bkInput.h"
 #include "bkEmu.h"
 #include "Emulator/pdp/defines.h"
 #include "Keyboard/ps2Keyboard.h"

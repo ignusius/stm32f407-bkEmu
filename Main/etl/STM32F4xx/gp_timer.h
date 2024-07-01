@@ -1,7 +1,7 @@
 #ifndef _ETL_STM32F4XX_GP_TIMER_H_INCLUDED
 #define _ETL_STM32F4XX_GP_TIMER_H_INCLUDED
 
-#include "etl/stm32f4xx/types.h"
+#include <etl/STM32F4xx/types.h>
 
 namespace etl {
 namespace stm32f4xx {
@@ -18,7 +18,7 @@ struct GpTimer {
     pwm2 = 0b111,
   };
 
-  #define ETL_BFF_DEFINITION_FILE "etl/stm32f4xx/gp_timer.reg"
+  #define ETL_BFF_DEFINITION_FILE "etl/STM32F4xx/gp_timer.reg"
   #include "etl/biffield/generate.h"
   #undef ETL_BFF_DEFINITION_FILE
 };

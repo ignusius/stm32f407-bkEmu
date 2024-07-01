@@ -1,8 +1,7 @@
-#include "etl/stm32f4xx/interrupts.h"
-
+#include <etl/STM32F4xx/interrupts.h>
+#include <etl/STM32F4xx/types.h>
 #include "etl/armv7m/nvic.h"
 
-#include "etl/stm32f4xx/types.h"
 
 using etl::armv7m::nvic;
 
